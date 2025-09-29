@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="Style/index.css">
+</head>
+<body>
+  <div class="calculadora">
+    <h2>Calculadora</h2>
+
+    <input type="text" id="Resultado" readonly placeholder="0">
+
+    <div class="teclado">
+
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="op" id="suma">+</button>
+
+ 
+      <button class="num">4</button>
+      <button class="num">5</button>
+      <button class="num">6</button>
+      <button class="op" id="resta">-</button>
+
+      <button class="num">7</button>
+      <button class="num">8</button>
+      <button class="num">9</button>
+      <button class="op" id="multiplicacion">×</button>
+
+
+      <button class="num">0</button>
+      <button class="borrar" onclick="BorrarOp()">Del</button>
+      <button class="igual" onclick="calcular()">=</button>
+      <button class="op" id="division">÷</button>
+
+    </div>
+
+      <div class="historial">
+        <button class="borrar" onclick="borrarhistorial()">Borrar</button>
+        <h3>Resultados guardados:</h3>
+      </div>
+      
+      <ul id="ResultadosGuardados"></ul>
+      
+  </div>
+</body>
+  <script src="index.js"></script>
+</html>
